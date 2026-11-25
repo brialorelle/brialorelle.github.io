@@ -1,0 +1,159 @@
+/* Site styles. Fonts: Barlow (light) is a free stand-in for DIN Next Light used on the old Wix site. */
+:root {
+  --text: #605e5e;
+  --text-dark: #2f2e2e;
+  --nav: #a0a09f;
+  --page: 980px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: "Barlow", "DIN Next", "D-DIN", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+a { color: inherit; text-decoration: underline; }
+a:hover { color: var(--text-dark); }
+b, strong { font-weight: 500; }
+img { max-width: 100%; height: auto; display: block; }
+
+.wrap { max-width: var(--page); margin: 0 auto; padding: 0 20px; }
+
+/* ---------- header ---------- */
+.site-header { padding: 38px 0 30px; }
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.site-name {
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 200;
+  white-space: nowrap;
+}
+.site-name:hover { color: var(--text); }
+
+.nav { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.nav > li { position: relative; }
+.nav a {
+  display: block;
+  padding: 4px 17px;
+  font-size: 16px;
+  color: var(--nav);
+  text-decoration: none;
+  transition: color .15s;
+}
+.nav > li:last-child > a { padding-right: 0; }
+.nav a:hover, .nav a.active { color: var(--text-dark); }
+
+.nav .sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: #fff;
+  z-index: 10;
+}
+.nav li:hover > .sub, .nav li:focus-within > .sub { display: block; }
+.nav .sub a { padding: 6px 17px; }
+
+/* ---------- generic content ---------- */
+main { padding-bottom: 80px; }
+main p { margin: 0 0 1.15em; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 300; color: var(--text); margin: 0 0 .8em; line-height: 1.25; }
+.title { font-size: 25px; }
+.section-title { font-size: 30px; margin-bottom: .6em; }
+.small-title { font-size: 22px; }
+
+.label { margin-top: 1.6em; }
+.pubs p { margin-bottom: 1em; }
+
+/* two-column rows: figures on the left, text on the right */
+.row {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+.row + .row { margin-top: 70px; }
+.figs { display: flex; flex-direction: column; align-items: center; gap: 18px; padding-top: 30px; }
+.figs figure { margin: 0; text-align: center; }
+.figs figcaption { font-size: 14px; margin-top: 4px; }
+
+/* ---------- about ---------- */
+.about { display: grid; grid-template-columns: 330px 1fr; gap: 30px; }
+.about .photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  margin: 60px auto 0;
+}
+.about .text { font-size: 14.5px; color: var(--text-dark); }
+.about .text .title { color: var(--text); margin-bottom: 1em; }
+.social { display: flex; justify-content: flex-end; gap: 6px; margin-top: 30px; }
+.social img { width: 33px; height: 33px; }
+
+/* ---------- join the lab ---------- */
+.lead { color: #3fa8b5; }
+.lead, .teal { color: #3fa8b5; }
+a.teal { text-decoration: none; }
+.faq { margin-top: 30px; }
+.faq-q { display: flex; align-items: center; gap: 14px; font-size: 18px; margin: 30px 0 14px; }
+.faq-q .num { padding-right: 14px; border-right: 3px solid var(--text-dark); line-height: 1; }
+.faq-a { line-height: 2; font-size: 14px; }
+
+/* ---------- resources / texforms ---------- */
+.resources ul { margin: 0 0 1.15em; padding-left: 22px; }
+.resources li p { margin: 0; }
+.resources h2 { margin-top: 1.6em; }
+.resources > h2:first-child { margin-top: 0; }
+.indent { padding-left: 50px; }
+
+.texgrid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; margin: 10px 0 40px; }
+.texgrid figure { margin: 0; }
+.texgrid .cap { font-size: 14px; margin-bottom: 6px; }
+.figure5 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; margin: 10px 0 40px; }
+.figure5 .cap { font-size: 13px; }
+
+/* ---------- cv ---------- */
+.cv-frame { width: 100%; height: 1150px; border: 1px solid #e5e5e5; }
+
+.contact { padding-left: 300px; }
+
+.footnote { font-size: 13px; margin-top: 2em; }
+
+/* ---------- small screens ---------- */
+@media (max-width: 760px) {
+  .site-header { padding: 24px 0 16px; }
+  .site-name { font-size: 34px; }
+  .nav a { padding: 4px 14px 4px 0; font-size: 15px; }
+  .row, .about { grid-template-columns: 1fr; gap: 10px; }
+  .figs { flex-direction: row; flex-wrap: wrap; justify-content: center; padding-top: 0; }
+  .figs > * { flex: 1 1 240px; max-width: 340px; }
+  .about .photo { margin-top: 0; }
+  .indent, .contact { padding-left: 0; }
+  .texgrid, .figure5 { grid-template-columns: 1fr; }
+  .social { justify-content: flex-start; }
+  .cv-frame { height: 80vh; }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources | bria long</title>
+  <meta name="description" content="Bria Long, Assistant Professor of Psychology at UC San Diego. Visual concepts, development, and learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="index.html">bria long</a>
+    <ul class="nav">
+      <li><a href="index.html">About</a></li>
+      <li><a href="join-the-lab.html">Join the lab</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="resources.html" class="active">Resources</a>
+        <ul class="sub"><li><a href="texforms.html">Texform FAQ</a></li></ul></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main class="wrap">
+<div class="resources">
+<h2 class="title">Collecting and analyzing egocentric videos from children</h2>
+<div class="indent"><p>If you're looking to collect your own dataset with a new camera, please e-mail me at bria [at] stanford.edu — we're finalizing a new high-resolution camera using the GoPro Hero Bones camera (see <a href="research.html">Research</a> page for photo) and more information at</p>
+<p><a href="https://langcog.github.io/babyview/" target="_blank" rel="noopener">https://langcog.github.io/babyview/</a></p>
+<p>If you're looking for existing, available egocentric video datasets, you can:</p>
+<ul>
+<li>
+<p>find the paper on the SAYCam dataset <a href="https://direct.mit.edu/opmi/article/doi/10.1162/opmi_a_00039/97495/SAYCam-A-Large-Longitudinal-Audiovisual-Dataset" target="_blank" rel="noopener">here</a></p>
+</li>
+<li>
+<p>get access to the SAYCam dataset through <a href="https://databrary.home.nyu.edu/volume/564" target="_blank" rel="noopener">Databrary</a></p>
+</li>
+<li>
+<p>get access to the in-lab dataset through <a href="https://nyu.databrary.org/volume/101" target="_blank" rel="noopener">Databrary</a></p>
+</li>
+</ul>
+<p>If you're looking for information on how to analyze social information in video datasets, you can:</p>
+<ul>
+<li>
+<p>First, see discussion section of <a href="https://psyarxiv.com/z7tdg/" target="_blank" rel="noopener">Long et al., in press DevPsych </a>— there are some limitations to this method!</p>
+</li>
+<li>
+<p>If you want to run these models on your data, first check out the <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose" target="_blank" rel="noopener">OpenPose</a> repository we used </p>
+</li>
+<li>
+<p>Look through<a href="https://github.com/brialorelle/headcam-algo" target="_blank" rel="noopener"> this repository </a>which has instructions to follow our pipeline — we applied the algorithm without fine-tuning and then used face/hand keypoints.</p>
+</li>
+<li>
+<p>You'll need access to a server with a GPU to run OpenPose (there may be easier algorithms/codebases available, let me know if you find one). Note that this is a serious data management issue as OP produces 1 file/frame of each video, and keypoints for every person in every frame.</p>
+</li>
+</ul></div>
+<h2 class="title">Collecting &amp; analyzing digital children's drawings</h2>
+<div class="indent"><p>If you're looking for our available drawings datasets, please hang tight — we will release the large datasets with publication. Send me <a href="contact.html">an e-mail </a> and I will add you to a notification list.</p>
+<p>If you want to analyze your own digital drawing data:</p>
+<ul>
+<li>
+<p>For model embeddings</p>
+<ul>
+<li>
+<p>I recommend <a href="https://github.com/jina-ai/clip-as-service" target="_blank" rel="noopener">this repository</a> for getting OpenAI's CLIP model embeddings very <a href="https://openai.com/blog/clip/" target="_blank" rel="noopener">easily</a></p>
+</li>
+<li>
+<p>We used custom PyTorch code, but <a href="https://www.frontiersin.org/articles/10.3389/fninf.2021.679838/full" target="_blank" rel="noopener">THINGSvision</a> is a great new resource for getting VGG-19 and other DNN model embeddings</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If you want to get stroke annotations, you can browse our <a href="https://github.com/cogtoolslab/kiddraw_annotations_public2022" target="_blank" rel="noopener">codebase</a> but do note that it is not intended for public use </p>
+</li>
+</ul>
+<p>If you're looking for to collect your own drawing data: </p>
+<ul>
+<li>
+<p>Since we initially collected these data, there is now a <a href="https://www.jspsych.org/7.1/plugins/sketchpad/" target="_blank" rel="noopener">sketchpad plugin</a> in JsPsych! </p>
+</li>
+<li>
+<p>Images/stroke data are typically sent to a server database via an an internet connection since they are generated as the user produces the drawing — we used <a href="https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&amp;utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-us_ps-all_desktop_eng_lead&amp;utm_term=mongodb&amp;utm_medium=cpc_paid_search&amp;utm_ad=e&amp;utm_ad_campaign_id=12212624338&amp;adgroup=115749704103&amp;gclid=CjwKCAjwp9qZBhBkEiwAsYFsb6EX78Hc3JM4RfrIptTqxMJFzAMweafqgHTfuNEuegf8K9RMomKHsBoCRYQQAvD_BwE" target="_blank" rel="noopener">MongoDB</a>. If you want to run an offline version of your experiment, you can use <a href="https://pouchdb.com/" target="_blank" rel="noopener">PouchDB</a> (which caches the data locally) and then sends them to a <a href="https://couchdb.apache.org/" target="_blank" rel="noopener">CouchDB</a> database when connected to the internet.</p>
+</li>
+<li>
+<p>For use in museums, we embedded our Javascript experiment in the <a href="https://apps.apple.com/us/app/kiosk-pro-enterprise/id971374351" target="_blank" rel="noopener">Kiosk Enterprise App so that you can implement some controls (e.g., control volume, turn Kiosk on/off at certain times of day, etc)</a></p>
+</li>
+</ul></div>
+<h2 class="title">Generating and using texforms — see <a href="texforms.html">dedicated page</a></h2>
+</div>
+</main>
+</body>
+</html>
