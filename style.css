@@ -131,6 +131,8 @@ a.tag:hover { text-decoration: underline; }
 .contact dt { font-weight: 700; }
 .contact dd { margin: 0; }
 .contact .note { color: var(--muted); }
+.contact .lab-row { display: flex; align-items: flex-start; gap: 28px; }
+.lab-mark img { width: 90px; height: auto; }
 
 /* small screens */
 @media (max-width: 760px) {
