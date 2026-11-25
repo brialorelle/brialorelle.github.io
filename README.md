@@ -3,10 +3,10 @@
 Plain HTML/CSS rebuild of the old Wix site at www.brialong.com, for GitHub Pages. No build step:
 edit the `.html` files directly.
 
-- `style.css`: all styling. The font is Barlow Light (Google Fonts), a free stand-in for the DIN Next Light used on Wix.
+- `style.css`: all styling (Lato from Google Fonts, teal from vislearnlab.org).
 - `img/`: images copied from the Wix site.
-- `files/`: PDFs that were hosted on Wix (`/_files/ugd/...`), so the links keep working after Wix is cancelled.
-- `files/cv.pdf`: the CV page embeds this file. Drop the current CV here.
+- `_files/ugd/`: PDFs that were hosted on Wix, kept at the same path so old brialong.com PDF links keep working.
+- `files/cv.pdf`: the CV page embeds this file. Replace it to update the CV.
 
 ## Preview locally
 
