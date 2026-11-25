@@ -103,7 +103,10 @@ a.tag:hover { text-decoration: underline; }
 .profile-links span { color: #bbb; margin: 0 8px; }
 .profile-links a { text-decoration: none; }
 .about-main { max-width: var(--prose); padding-top: 6px; }
-.about-main p { line-height: 1.75; margin-bottom: 1.1em; }
+.about-title { margin: -6px 0 22px; font-size: 32px; font-weight: 300; letter-spacing: 0.02em; color: #555; }
+.about-main p { line-height: 1.75; margin-bottom: 1.4em; color: #5a5a5a; letter-spacing: 0.01em; }
+.about-main p.intro { color: var(--ink); font-size: 16px; }
+.about-main p b { color: var(--ink); }
 
 /* research */
 .row { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 40px; align-items: start; }
@@ -146,3 +149,5 @@ a.tag:hover { text-decoration: underline; }
   .contact dd { margin-bottom: 12px; }
   .cv-frame { height: 75vh; }
 }
+.about-main p a { color: inherit; text-decoration-color: rgba(0, 0, 0, .35); }
+.about-main p a:hover { color: var(--teal); }
