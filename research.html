@@ -7,7 +7,7 @@
   <meta name="description" content="Bria Long, Assistant Professor of Psychology at UC San Diego and PI of the Visual Learning Lab.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0, 6..12, 300;0, 6..12, 400;0, 6..12, 600;1, 6..12, 300;1, 6..12, 400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,115 +31,75 @@
   <div class="wrap content">
 <header class="page-head">
   <h1 class="page-title">Research</h1>
-  <p class="lede">How we learn to derive meaning from what we see</p>
 </header>
-<section class="row reveal">
- <div class="figs">
- <img src="img/drawings-by-age.png" alt="Example drawings by age" loading="lazy">
- </div>
- <div class="prose">
-<h2 class="h2">Visual concepts across childhood</h2>
-<p>In modern times, almost all children learn to draw and are prolific producers of drawings throughout childhood. Yet consider how much effort it takes to actually “draw a tiger” – one has to both access the mental representation of “a tiger” and then communicate this via a few well-placed strokes. What might children’s drawings reveal about how they represent the visual concepts in the world around them? For this project, I collected over 37, 000 digital children’s drawings behaviors via an iPad interface, and analyzed the category-diagnostic information in these drawings using both embeddings from deep neural networks and human annotations of the recognizable object parts in each stroke. We find that children not only change in their ability to include category-diagnostic information in their drawings but also to use this information when trying to recognize other children's drawings Taken together, this line of work suggests that gradual changes in visual concepts knowledge are reflected in children's ability to produce and recognize line drawings of visual concepts.</p>
-<h3 class="label">Preprints &amp; Papers</h3>
-<p><b class="me">Long, B.</b>, Fan, J.E., Huey, H., Chai, Z., &amp; Frank, M. C. (2024). Parallel developmental changes in children's production and recognition of line drawings of visual concepts. <i>Nature Communications.</i> <a class="tag" href="https://www.nature.com/articles/s41467-023-44529-9" target="_blank" rel="noopener">open access</a> <a class="tag" href="https://osf.io/qymjr/" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b>, Wang, Y., Christie, S., Frank, M. C., &amp; Fan, J.E. (2023). Developmental changes in drawing production under different memory demands in a U.S. and Chinese sample. <i>Developmental Psychology.</i> <a class="tag" href="https://psyarxiv.com/fpebs" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/qxsgw/" target="_blank" rel="noopener">repository</a></p>
-<p></p>
-<h3 class="label">Related conference proceedings</h3>
-<p>Huey*, H., <b class="me">Long*, B.</b>, Yang, J., George, K., and Fan, J. (2022). Developmental changes in the semantic part structure of drawn objects. <i>Proceedings of the 44th Annual Meeting of the Cognitive Science Society.</i> <a class="tag" href="files/a22a3d_e025e206e2494951ba5b76e7e99e188d.pdf">pdf</a> <a class="tag" href="https://github.com/cogtoolslab/kiddraw_annotations_public2022" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b>, Fan, J., Chai, Z., &amp; Frank, M. C. (2019). Developmental changes in the ability to draw distinctive features of object categories. <i>Proceedings of the 41st Annual Conference of the Cognitive Science Society.</i> <a class="tag" href="https://psyarxiv.com/8rzku" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://github.com/brialorelle/kiddraw" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b>, Fan, J. E., Frank, M. C. (2018). Drawings as a window into developmental changes in object representations. <i>Proceedings of the 40th Annual Meeting of the Cognitive Science Society</i> <a class="tag" href="files/a22a3d_8db8a81df0db4a05b275ed22e5a3f455.pdf">pdf</a> <a class="tag" href="files/a22a3d_3e242f68b9df44d8be2dfaff3b17d066.pdf">poster</a></p>
 
-<h3 class="label">Press &amp; Outreach</h3>
-<p><a href="https://bingschool.stanford.edu/news/scholar-bria-long-drawing-window-development-object-representations" target="_blank" rel="noopener">Bing Nursery School Blogpost</a></p>
-<p><a href="https://medium.com/purple-museum/illuminating-childrens-illustrations-5e1a8ea1d" target="_blank" rel="noopener">CDM Purple Museum Blogpost</a></p>
-<h3 class="label">Latest recorded talks &amp; tweets</h3>
-<p><a href="https://www.youtube.com/watch?v=0kyJlfSgvYQ&amp;list=PL2_Vc3j_d7HPHojt9q2pP8A3AM_pIGy7C&amp;index=1&amp;t=1475s&amp;ab_channel=Images2SymbolsWorkshop" target="_blank" rel="noopener">Talk </a>as panelist at CogSci '22 Images2Symbols workshop</p>
-<p>2021 Tweet thread <a href="https://twitter.com/brialong/status/1379561700651724800?s=20" target="_blank" rel="noopener">here</a></p>
-<p>NeurIRPS SVHRM 2020 <a href="https://cbmm.mit.edu/video/parallel-developmental-changes-childrens-drawing-and-recognition-visual-concepts" target="_blank" rel="noopener">Talk Recording</a></p>
- </div>
+<section class="row" id="drawings">
+  <div class="figs">
+    <figure><img src="img/drawings-by-age.png" alt="Children's drawings of nine categories, by age" loading="lazy"><figcaption>Drawings by 4- to 8-year-olds</figcaption></figure>
+  </div>
+  <div class="prose">
+    <h2 class="h2">Visual concepts across development</h2>
+    <p>Drawing a tiger requires both accessing a mental representation of “a tiger” and communicating it in a few well-placed strokes. Using over 37,000 digital drawings collected on an iPad, analyzed with deep neural network embeddings and human annotations, we find that children change both in their ability to include category-diagnostic information in their drawings and in their ability to recognize other children's drawings. We are now measuring the precision of visual concept knowledge at scale, and how what infants and children know shapes where they look.</p>
+    <p class="label">Selected papers</p>
+    <p class="pub"><b class="me">Long, B.</b>, Ma, W. A., Tan, A. W. M., Silverman, R., Frank, M. C., &amp; Yeatman, J. D. (in press). Developmental changes in the precision of children’s representations of English noun meanings. <i>Psychological Science.</i></p>
+    <p class="pub">Zhu, R., Arieda, J. O., Kilonzo, T. N., Watson, Z. D., Sepuri, T.†, <b class="me">Long, B.</b>, Fan, J. E., &amp; Frank, M. C. (in press). Developmental changes in children’s production of line drawings in global contexts: Evidence from Kisumu, Kenya. <i>Developmental Science.</i> <a class="tag" href="https://doi.org/10.1111/desc.70316" target="_blank" rel="noopener">doi</a></p>
+    <p class="pub">Sepuri, T.†, Zettersten, M., &amp; <b class="me">Long, B.</b> (2025). Examining the precision of infants’ visual concepts by leveraging vision-language models and automated gaze coding. <i>Cognitive Computational Neuroscience.</i> <a class="tag" href="https://osf.io/preprints/psyarxiv/p3mjt_v1" target="_blank" rel="noopener">open access</a></p>
+    <p class="pub">Haskins, A. J.†, Sepuri, T.†, &amp; <b class="me">Long, B.</b> (2025). Knowledge differences affect gaze behavior during naturalistic object exploration. <i>Cognitive Computational Neuroscience.</i> <a class="tag" href="https://osf.io/preprints/psyarxiv/xhuas_v1" target="_blank" rel="noopener">open access</a></p>
+    <p class="pub"><b class="me">Long, B.</b>, Fan, J. E., Huey, H., Chai, Z.†, &amp; Frank, M. C. (2024). Parallel developmental changes in children's production and recognition of line drawings of visual concepts. <i>Nature Communications.</i> <a class="tag" href="https://www.nature.com/articles/s41467-023-44529-9" target="_blank" rel="noopener">open access</a> <a class="tag" href="https://osf.io/qymjr/" target="_blank" rel="noopener">repository</a></p>
+    <p class="pub"><b class="me">Long, B.</b>, Wang, Y., Christie, S., Frank, M. C., &amp; Fan, J. E. (2023). Developmental changes in drawing production under different memory demands in a U.S. and Chinese sample. <i>Developmental Psychology.</i> <a class="tag" href="https://psyarxiv.com/fpebs" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/dk9xw/" target="_blank" rel="noopener">repository</a></p>
+    <p class="more">Press and talks: <a href="https://bingschool.stanford.edu/news/scholar-bria-long-drawing-window-development-object-representations" target="_blank" rel="noopener">Bing Nursery School</a> · <a href="https://medium.com/purple-museum/illuminating-childrens-illustrations-5e1a8ea1d" target="_blank" rel="noopener">CDM Purple Museum</a> · <a href="https://www.youtube.com/watch?v=0kyJlfSgvYQ&amp;list=PL2_Vc3j_d7HPHojt9q2pP8A3AM_pIGy7C&amp;index=1&amp;t=1475s" target="_blank" rel="noopener">CogSci 2022 Images2Symbols talk</a></p>
+  </div>
 </section>
-<section class="row reveal">
- <div class="figs">
- <img src="img/babyview-1.png" alt="Head-mounted camera" loading="lazy">
- <img src="img/babyview-2.png" alt="Egocentric video frames" loading="lazy">
- <img src="img/babyview-3.png" alt="Detections over age" loading="lazy">
- </div>
- <div class="prose">
-<h2 class="h2">What do babies see as they learn?</h2>
-<p>What are the statistics of infants' visual experience, and how does infants' view of the world change as they go from sitting to crawling (or scooting) to walking? What are the social cues that they see (e.g., presence of faces or hands), and how is this different across individuals in at-home vs. in-lab environments? Finally, what kinds of constraints do these statistics put on models of category and word learning?</p>
-<p>This line of work records and analyzes videos taken from the infant perspective with modern computer vision models, aiming to understand the natural structure in the visual input and how this structure scaffolds early learning. We're also developing new cameras with better view angles and higher resolution (see example participant -- my son -- and photo to the left!). By understanding children's early learning environments, we can build more mechanistic models of how learning unfolds in everyday contexts.</p>
-<h3 class="label">Papers &amp; Conference Proceedings</h3>
-<p>Sepuri, T.*, Loong Aw, K.*, Tan, A. W. M.*, Sparks, R. Z., Marchman, V.A., Frank, M.C., <b class="me">Long, B.</b> (2025) Characterizing young children’s everyday activities using video question-answering models. NeurIPS DBM Workshop. <a class="tag" href="https://osf.io/preprints/psyarxiv/gndy9_v1" target="_blank" rel="noopener">open access</a>*denotes joint first-authorship,<br/>
-<br/>
-Yang, J., Sepuri, T., Tan, A., Frank, M. C., &amp; <b class="me">Long, B.</b> (2025). Quantifying infants’ everyday experiences with objects in a large corpus of egocentric videos. Proceedings of Cognitive Computational Neuroscience Conference 2025. <a class="tag" href="https://osf.io/qta5y/" target="_blank" rel="noopener">open access</a><br/>
-<br/>
-<b class="me">Long, B.*</b>, Sparks, R. Z.*, Xiang, V.*, Stojanov, S.*, Yin, Z., Keene, G. E., Nag, A., Zhuang, C., Marchman, V., Yamins, D.L.K., &amp; Frank, M.C. (2025). The BabyView dataset: High-resolution egocentric videos of infants' and young children's everyday experiences. Proceedings of Cognitive Computational Neuroscience Conference 2025 (8 page track) <a class="tag" href="https://openreview.net/forum?id=bbv4CA2noZ" target="_blank" rel="noopener">open access</a> *equal contributions</p>
-<p><b class="me">Long, B.</b>, Goodin, S., Kachergis, G., Marchman, V., Radwan, S., Sparks, R., Xiang, V., Zhuang, C., Hsu, O., Newman, B., Yamins, D.L.K., Frank M.C. (2023). The BabyView Camera: Designing a new head-mounted camera to capture children’s early social and visual environment. <i>Behavioral Research Methods</i>. <a class="tag" href="https://psyarxiv.com/238jk/" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/kwvxu/" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b>, Kachergis, G., Agrawal, K., &amp; Frank, M. C. (2022).A longitudinal analysis of the social information in infants' naturalistic visual experience using automated detections. <i>Developmental Psychology.</i> <a class="tag" href="https://doi.org/10.31234/osf.io/z7tdg" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/cdhw4/" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b>, Sanchez, A., Kraus, A. M., Agrawal, K., &amp; Frank, M. C. (2022). Automated detections reveal the social information in the changing infant view. <i>Child Development.</i> <a class="tag" href="https://doi.org/10.31234/osf.io/cmj65" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/d27hy/" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b>, Kachergis, G., &amp; Naiti, B., &amp; Frank, M. C. (2021). Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience. <i>Proceedings of the 43nd Annual Conference of the Cognitive Science Society.</i> <a class="tag" href="https://osf.io/ft4ka/" target="_blank" rel="noopener">repository</a> <a class="tag" href="https://psyarxiv.com/nv47t/" target="_blank" rel="noopener">pdf</a></p>
- </div>
-</section>
-<section class="row reveal">
- <div class="figs">
- <img src="img/midlevel-1.png" alt="Texforms" loading="lazy">
- <figure><img src="img/midlevel-single-subject.png" alt="single subject example" loading="lazy"><figcaption>single subject example</figcaption></figure>
- <figure><img src="img/size-stroop.png" alt="Size Stroop paradigm" loading="lazy"><figcaption>Size Stroop Paradigm</figcaption></figure>
- </div>
- <div class="prose">
-<h2 class="h2">Meaning from mid-level features</h2>
-<p>One might intuit that we need to recognize what a depicted object is before we know whether it is alive or how big or small it is in the real-world. However, in a series of studies we have found that there are common mid-level features that characterize animals, small objects (e.g., cups, pens) and big objects (e.g., cars, couches). As a result, we still have expectations about the animacy and real-world size of unrecognizable “texforms” – textures that preserve the coarse form of an object. These unrecognizable texforms can also automatically trigger real-world size processing -- suggesting that basic-level recognition is not always a gateway to real-world size processing. Most recently, we have found that these features also elicit animacy and size responses in ventral visual cortex.</p>
-<p>Broadly, this line of work asks when mid-level features are sufficient for cognitive and neural processes that seem to rely on recognition. </p>
-<img src="img/midlevel-figure.png" alt="Mid-level features figure" loading="lazy">
-<br>
-<h3 class="label">For more, see</h3>
-<p><b class="me">Long, B.</b>, Yu., C.P., &amp; Konkle, T. (2018). Mid-level visual features explain the high-level categorical organization of the ventral stream<i>. Proceedings of the National Academy of Sciences.</i> <a class="tag" href="files/a22a3d_71f2d720c5174bc49fb599ffaa9afb7b.pdf">pdf</a> <a class="tag" href="https://osf.io/69pbd/" target="_blank" rel="noopener">repository</a></p>
-<p><b class="me">Long, B.</b> &amp; Konkle, T. (2017). A familiar Size-Stroop effect in the absence of basic-level recognition. <i>Cognition.</i> <a class="tag" href="files/a22a3d_ca4f2993cd884a789ff390815f124120.pdf">pdf</a></p>
-<p></p>
-<p><b class="me">Long, B.</b>, Störmer, V.S., &amp; Alvarez, G.A. (2017). Mid-level perceptual features contain early cues to animacy. <i>Journal of Vision. (</i> <a class="tag" href="http://jov.arvojournals.org/article.aspx?articleid=2635293" target="_blank" rel="noopener">open access</a></p>
-<p></p>
-<p><b class="me">Long, B.</b>, Konkle, T., Cohen, M.A., &amp; Alvarez, G.A. (2016). Mid-level perceptual features distinguish objects of different real-world sizes. <i>Journal of Experimental Psychology: General.</i> <a class="tag" href="files/a22a3d_2f9b32169771444994d24113ed3834ef.pdf">pdf</a></p>
- </div>
-</section>
-<section class="row reveal">
- <div class="figs">
- <img src="img/development-1.png" alt="" loading="lazy">
- <img src="img/development-2.png" alt="" loading="lazy">
- </div>
- <div class="prose">
-<h2 class="h2">Developing representations of animacy and object size</h2>
-<p>How do we learn which bundles of visual features describe "animals", or that objects that are big in the real-world tend to be boxy? I've started asking this question by transforming the same psychophysical paradigms we use with adults (e.g., visual search, Stroop paradigms) for preschoolers. Our current work suggests that preschoolers show the same signatures of animacy and object size representations in these tasks -- hinting that their perceptual representations are somewhat adult-like, and pointing towards an earlier developmental trajectory. We’ve also found some preliminary evidence that even one-year-olds seem to process the real-world sizes of depicted objects.</p>
-<p><b class="me">Long, B.</b>, Moher, M., Carey, S. E., &amp; Konkle, T. (2019). Animacy and object size are reflected in perceptual similarity computations by the preschool years. <i>Visual Cognition,</i> 1-17. <a class="tag" href="https://osf.io/d5uzg/" target="_blank" rel="noopener">repository</a> <a class="tag" href="https://psyarxiv.com/gu76h/download?format=pdf" target="_blank" rel="noopener">pdf</a></p>
 
-<p><b class="me">Long, B.</b>, Moher, M., Carey, S., &amp; Konkle, T. (2019). Real-world size is automatically encoded in preschoolers’ object representations. <i>Journal of Experimental Psychology: Human Perception and Performance</i> <a class="tag" href="https://github.com/brialorelle/kidstroop" target="_blank" rel="noopener">repository</a> <a class="tag" href="files/a22a3d_8188e292aec646748f946e71bf1bf7c4.pdf">pdf</a></p>
-<p><b class="me">Long, B.</b>, Carey, S., &amp; Konkle, T. (2016). Pre-verbal infants automatically activate real-world object size information. Poster presented at the annual meeting of the Vision Sciences Society. <a class="tag" href="files/a22a3d_4a108aeeffe0421abaed6812573f771e.pdf">pdf</a></p>
-<p></p>
- </div>
+<section class="row" id="infant-view">
+  <div class="figs">
+    <figure><img src="img/babyview-1.png" alt="A child wearing the BabyView head-mounted camera" loading="lazy"><figcaption>The BabyView camera</figcaption></figure>
+    <figure><img src="img/babyview-3.png" alt="Face and hand detections in infant-view video frames" loading="lazy"></figure>
+  </div>
+  <div class="prose">
+    <h2 class="h2">What children see as they learn</h2>
+    <p>What is the structure of infants' and young children's everyday visual experience, and how does it scaffold early learning? We record video from the child's perspective with the BabyView camera, a high-resolution head-mounted camera, and analyze it with computer vision and multimodal models, characterizing the objects, people, and activities children encounter and how what they see aligns with what they hear.</p>
+    <p class="label">Selected papers</p>
+    <p class="pub">Frank, M. C., Tan, A. W. M., Aw, K. L., Sparks, R. Z., Moreno, V., Keene-Lee, G., Ryan, M. R., Sepuri, T.†, Yang, J.†, Marchman, V. A., Yamins, D. L. K., &amp; <b class="me">Long, B.</b> (2026). Scaling cross-situational word learning on children’s naturalistic experiences. <i>arXiv.</i> <a class="tag" href="https://arxiv.org/abs/2610.31842" target="_blank" rel="noopener">arxiv</a></p>
+    <p class="pub">Yang, J.†, Sepuri, T.†, Tan, A. W. M., Aw, K. L., Frank, M. C., &amp; <b class="me">Long, B.</b> (2026). Characterizing the visual representation of objects from the child's view. <i>arXiv.</i> In revision, <i>Nature Human Behaviour</i>. <a class="tag" href="https://arxiv.org/abs/2605.14990" target="_blank" rel="noopener">arxiv</a></p>
+    <p class="pub">Tan, A. W. M.*, Yang, J.†*, Sepuri, T.†, Aw, K. L., Sparks, R. Z., Yin, Z., Marchman, V., Frank, M. C., &amp; <b class="me">Long, B.</b> (2025). Assessing the alignment between infants' visual and linguistic experience using multimodal language models. <i>arXiv.</i> <a class="tag" href="https://arxiv.org/abs/2511.18824" target="_blank" rel="noopener">arxiv</a></p>
+    <p class="pub">Sepuri, T.†*, Aw, K. L.*, Tan, A. W. M.*, Sparks, R. Z., Marchman, V. A., Frank, M. C., &amp; <b class="me">Long, B.</b> (2025). Characterizing young children’s everyday activities using video question-answering models. <i>NeurIPS DBM Workshop.</i> <a class="tag" href="https://osf.io/preprints/psyarxiv/gndy9_v1" target="_blank" rel="noopener">open access</a></p>
+    <p class="pub"><b class="me">Long, B.*</b>, Sparks, R. Z.*, Xiang, V.*, Stojanov, S.*, Yin, Z., Keene, G. E., Nag, A., Zhuang, C., Marchman, V., Yamins, D. L. K., &amp; Frank, M. C. (2025). The BabyView dataset: High-resolution egocentric videos of infants' and young children's everyday experiences. <i>Cognitive Computational Neuroscience.</i> <a class="tag" href="https://doi.org/10.32470/vbbjtb0" target="_blank" rel="noopener">doi</a> <a class="tag" href="https://arxiv.org/abs/2406.10447" target="_blank" rel="noopener">arxiv</a></p>
+    <p class="pub"><b class="me">Long, B.</b>, Goodin, S., Kachergis, G., Marchman, V., Radwan, S., Sparks, R., Xiang, V., Zhuang, C., Hsu, O., Newman, B., Yamins, D. L. K., &amp; Frank, M. C. (2024). The BabyView camera: Designing a new head-mounted camera to capture children’s early social and visual environment. <i>Behavior Research Methods.</i> <a class="tag" href="https://psyarxiv.com/238jk/" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/kwvxu/" target="_blank" rel="noopener">repository</a></p>
+    <p class="pub"><b class="me">Long, B.</b>, Kachergis, G., Agrawal, K.†, &amp; Frank, M. C. (2022). A longitudinal analysis of the social information in infants’ naturalistic visual experience using automated detections. <i>Developmental Psychology.</i> <a class="tag" href="files/a22a3d_de0b1b2aac12483e8a9eddf780778936.pdf" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/cdhw4/" target="_blank" rel="noopener">repository</a></p>
+  </div>
 </section>
-<section class="row reveal">
- <div class="figs">
- <img src="img/earlier-1.jpg" alt="" loading="lazy">
- <img src="img/earlier-2.png" alt="" loading="lazy">
- </div>
- <div class="prose">
-<h2 class="h2">Earlier work</h2>
-<p>Before my graduate work at Harvard, I spent two years in France working at Laboratoire de Sciences Cognitives et Psycholinguistic at École Normale Supérieure, earning a Masters degree.</p>
-<p>For my master's thesis, I examined the neural processes that underlie infant’s ability to form new expectations about what will happen next. In this work, we used EEG to show that infants rapidly learned cross-modal statistical regularities (e.g., an arbitrary tone predicted that a flower would soon appear), and found that these regularities influenced both infants’ initial processing and ongoing processing of these visual events. </p>
-<p>I also spent a few years interested in cross-linguistic effects. During a yearlong Fulbright fellowship at ENS, I investigated phonological processing in infants, learning how to use NIRS (near infrared-spectroscopy) to measure neural processing in 14-month-olds. As an undergraduate, I was interested in the relationship between language and cognition: my earliest work found that Japanese and English speakers remember the agents of intentional and accidental events differently.</p>
-<h3 class="label">Publications</h3>
-<p>Kouider, S., <b class="me">Long, B.</b>, Le Stanc, L., Barbosa, L.S., Fievet, A.C., &amp; Gelskov, S. (2015). Neural dynamics of prediction and surprise in infants. <i>Nature Communications</i>, 6.</p>
-<p></p>
-<p>Minagawa-Kawai, Y., Cristia, A., <b class="me">Long, B.</b>, Vendelin, I., Hakuno, Y., Dutat, M., Filippin, L., Cabrol, D., and &amp; Dupoux, E. (2013). Insights on NIRS sensitivity from a cross-linguistic study on the emergence of phonological grammar. <i>Frontiers in Psychology</i></p>
-<p>Fausey, C., <b class="me">Long, B.</b>, Inamori, A., &amp; Boroditsky, L. (2010). Constructing agency: the role of language. <i>Frontiers in Cultural Psychology.</i></p>
- </div>
+
+<section class="row" id="mid-level">
+  <div class="figs">
+    <figure><img src="img/midlevel-1.png" alt="Original images and unrecognizable texforms" loading="lazy"><figcaption>Texforms</figcaption></figure>
+    <figure><img src="img/size-stroop.png" alt="Size Stroop paradigm" loading="lazy"><figcaption>Size Stroop paradigm</figcaption></figure>
+  </div>
+  <div class="prose">
+    <h2 class="h2">Meaning from mid-level features</h2>
+    <p>Do we need to recognize an object before we know whether it is alive or how big it is? Using unrecognizable “texforms” (textures that preserve the coarse form of an object), we found that mid-level features carry information about animacy and real-world size, automatically trigger real-world size processing, and explain the large-scale organization of ventral visual cortex. Preschoolers show the same signatures in visual search and Stroop tasks. See the <a href="resources.html#texforms">Texform FAQ</a> to make your own.</p>
+    <p class="label">Selected papers</p>
+    <p class="pub"><b class="me">Long, B.</b>, Moher, M., Carey, S., &amp; Konkle, T. (2019). Real-world size is automatically encoded in preschoolers’ object representations. <i>Journal of Experimental Psychology: Human Perception and Performance.</i> <a class="tag" href="files/a22a3d_8188e292aec646748f946e71bf1bf7c4.pdf" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://github.com/brialorelle/kidstroop" target="_blank" rel="noopener">repository</a></p>
+    <p class="pub"><b class="me">Long, B.</b>, Yu, C.-P., &amp; Konkle, T. (2018). Mid-level visual features underlie the high-level categorical organization of the ventral stream. <i>Proceedings of the National Academy of Sciences.</i> <a class="tag" href="files/a22a3d_71f2d720c5174bc49fb599ffaa9afb7b.pdf" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://osf.io/69pbd/" target="_blank" rel="noopener">repository</a></p>
+    <p class="pub"><b class="me">Long, B.</b> &amp; Konkle, T. (2017). A familiar Size-Stroop effect in the absence of basic-level recognition. <i>Cognition.</i> <a class="tag" href="files/a22a3d_ca4f2993cd884a789ff390815f124120.pdf" target="_blank" rel="noopener">pdf</a> <a class="tag" href="https://github.com/brialorelle/TexformSizeStroop" target="_blank" rel="noopener">repository</a></p>
+    <p class="pub"><b class="me">Long, B.</b>, Störmer, V. S., &amp; Alvarez, G. A. (2017). Mid-level perceptual features contain early cues to animacy. <i>Journal of Vision.</i> <a class="tag" href="http://jov.arvojournals.org/article.aspx?articleid=2635293" target="_blank" rel="noopener">open access</a> <a class="tag" href="https://github.com/brialorelle/MidLevelAnimacy" target="_blank" rel="noopener">repository</a></p>
+  </div>
 </section>
+
+<section class="row" id="earlier">
+  <div class="figs">
+    <figure><img src="img/earlier-1.jpg" alt="Infant NIRS recording setup" loading="lazy"></figure>
+  </div>
+  <div class="prose">
+    <h2 class="h2">Earlier work</h2>
+    <p>For my master's at the École Normale Supérieure in Paris, I used EEG to show that infants rapidly learn cross-modal statistical regularities that shape how they process visual events, and during a Fulbright year I used NIRS to study phonological processing in 14-month-olds. As an undergraduate, I found that Japanese and English speakers remember the agents of intentional and accidental events differently.</p>
+    <p class="label">Selected papers</p>
+    <p class="pub">Kouider, S., <b class="me">Long, B.</b>, Le Stanc, L., Barbosa, L. S., Fievet, A. C., &amp; Gelskov, S. (2015). Neural dynamics of prediction and surprise in infants. <i>Nature Communications.</i> <a class="tag" href="files/a22a3d_3b5efa56f13140958209145917158969.pdf" target="_blank" rel="noopener">pdf</a></p>
+    <p class="pub">Fausey, C., <b class="me">Long, B.</b>, Inamori, A., &amp; Boroditsky, L. (2010). Constructing agency: The role of language. <i>Frontiers in Psychology.</i> <a class="tag" href="http://journal.frontiersin.org/article/10.3389/fpsyg.2010.00162/abstract" target="_blank" rel="noopener">open access</a></p>
+  </div>
+</section>
+<p class="more">All papers are on the <a href="publications.html">Publications</a> page.</p>
   </div>
 </main>
-<footer class="site-footer">
-  <div class="wrap">
-    <span>Bria Long · Department of Psychology, UC San Diego</span>
-    <a href="https://vislearnlab.org" target="_blank" rel="noopener">Visual Learning Lab &rarr;</a>
-  </div>
-</footer>
 </body>
 </html>
