@@ -46,7 +46,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding-top: 26px;
   padding-bottom: 18px;
 }
-.site-name { font-size: 24px; font-weight: 300; letter-spacing: 0.04em; color: var(--ink); white-space: nowrap; }
+.site-name { font-size: 29px; font-weight: 300; letter-spacing: 0.04em; color: var(--ink); white-space: nowrap; }
 .site-name:hover { color: var(--ink); text-decoration: none; }
 .home .site-name { visibility: hidden; }
 
